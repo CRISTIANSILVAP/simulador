@@ -1,32 +1,36 @@
-Simulación de Sistemas Cuánticos
+# Simulación de Sistemas Cuánticos
+
 Este proyecto simula un sistema cuántico básico donde una partícula está confinada a un conjunto discreto de posiciones en una línea. Se implementa en Python utilizando la biblioteca NumPy para realizar cálculos matriciales y vectoriales.
 
-Contenido
-Descripción del Sistema
-Instalación
-Uso
-Ejemplos
-Ejercicios y Discusión
-Funciones Implementadas
-Contribuciones
-1. Descripción del Sistema
-El sistema permite especificar:
+## Contenido
 
-El número de posiciones disponibles.
-Un vector ket que representa el estado de la partícula y asigna las amplitudes de probabilidad.
-Funcionalidades
-Calcular la probabilidad de encontrar la partícula en una posición particular.
-Calcular la probabilidad de transición de un vector ket a otro.
+1. Descripción del Sistema
 2. Instalación
+3. Uso
+4. Ejemplos
+5. Ejercicios y Discusión
+6. Funciones Implementadas
+7. Contribuciones
+
+## 1. Descripción del Sistema
+
+El sistema permite especificar:
+- El número de posiciones disponibles.
+- Un vector *ket* que representa el estado de la partícula y asigna las amplitudes de probabilidad.
+
+### Funcionalidades
+
+- Calcular la probabilidad de encontrar la partícula en una posición particular.
+- Calcular la probabilidad de transición de un vector *ket* a otro.
+
+## 2. Instalación
+
 Asegúrate de tener Python y NumPy instalados. Puedes instalar NumPy utilizando pip:
 
-
+```bash
 pip install numpy
-3. Uso
-Puedes ejecutar el script principal para simular el sistema cuántico. A continuación, se presenta un ejemplo de uso:
 
-python
-Copiar código
+3. Uso
 import numpy as np
 
 # Definir el número de posiciones y el vector ket
@@ -51,6 +55,7 @@ ketVector2 = ketVector2 / ketVector2Norm
 transitionProbability = np.dot(np.conjugate(ketVector2.T), ketVector)
 print("La probabilidad de transición entre el vector", ketVector, "y el vector", ketVector2)
 print(transitionProbability)
+
 4. Ejemplos
 A continuación, se incluyen ejemplos de problemas implementados:
 
